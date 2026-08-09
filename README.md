@@ -1,6 +1,18 @@
+---
+title: Intelligent NIDS SOC Console
+emoji: 🛡️
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: Dashboard/app.py
+pinned: false
+---
+
 # NIDS Project
 
-This project provides a starter structure for an intrusion detection workflow using network traffic data.
+This project provides an Intelligent Network Intrusion Detection Workflow & SOC Dashboard.
+
 
 ## Structure
 - notebooks/: Jupyter notebooks for preprocessing, visualization, training, evaluation, and AI reporting.
