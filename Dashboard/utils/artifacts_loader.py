@@ -58,7 +58,9 @@ def ensure_artifacts():
 
 
 def missing_files() -> list:
+    ensure_artifacts()
     return [f for f in REQUIRED_FILES if not (ARTIFACTS_DIR / f).exists()]
+
 
 
 def get_feature_count():
