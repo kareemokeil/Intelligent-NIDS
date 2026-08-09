@@ -15,3 +15,5 @@ sentence-transformers>=2.6
 
 # Required for the real Gemini report pipeline (report_generator.py)
 google-genai>=0.5
+# Required for auto-downloading artifacts from Hugging Face Hub
+huggingface_hub>=0.20.0

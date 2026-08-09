@@ -20,16 +20,32 @@ EXPECTED ON DISK:
 copy your existing "faiss_index" folder into artifacts/)
 """
 
+import os
 from pathlib import Path
 import streamlit as st
+from huggingface_hub import hf_hub_download
 
 RAG_DIR = Path(__file__).resolve().parent.parent / "artifacts" / "faiss_index"
+MODEL_REPO = os.getenv("HF_MODEL_REPO", "KareemOkeil/nids-artifacts")
 EMBEDDING_MODEL_NAME = "BAAI/bge-small-en-v1.5"
 DEFAULT_K = 2
 
 
+def ensure_faiss_downloaded():
+    ARTIFACTS_DIR = RAG_DIR.parent
+    RAG_DIR.mkdir(parents=True, exist_ok=True)
+    for fname in ["index.faiss", "index.pkl"]:
+        if not (RAG_DIR / fname).exists():
+            try:
+                hf_hub_download(repo_id=MODEL_REPO, filename=f"faiss_index/{fname}", local_dir=str(ARTIFACTS_DIR))
+            except Exception as e:
+                pass
+
+
 def rag_is_configured() -> bool:
+    ensure_faiss_downloaded()
     return (RAG_DIR / "index.faiss").exists() and (RAG_DIR / "index.pkl").exists()
+
 
 
 @st.cache_resource
