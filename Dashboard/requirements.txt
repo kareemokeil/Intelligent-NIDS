@@ -1,0 +1,17 @@
+streamlit>=1.32
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+shap>=0.44
+plotly>=5.20
+joblib>=1.3
+fpdf2>=2.7
+
+# Required once you drop your faiss_index/ folder into artifacts/
+langchain-community>=0.2
+langchain-huggingface>=0.0.3
+faiss-cpu>=1.7
+sentence-transformers>=2.6
+
+# Required for the real Gemini report pipeline (report_generator.py)
+google-genai>=0.5

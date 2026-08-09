@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+secrets.toml
+secrets.toml.txt
+
+# Models & serialized files
+*.pkl
+*.keras
+*.h5
+*.joblib
+
+# Datasets
+Data/raw/
+*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Generated dashboard output
+Dashboard/reports/*.md
+Dashboard/reports/history.json
+
+# FAISS indexes
+faiss_index/
+**/faiss_index/
+*.faiss
+
+# Runtime / generated artifacts
+**/artifacts/*
+!**/artifacts/.gitkeep
