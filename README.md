@@ -498,17 +498,14 @@ This project provided hands-on experience in building an end-to-end AI cybersecu
 
 # Author
 
-**Kareem Ashraf Hussin Slama**
+**Kareem Ashraf Hussin Okeil**
 
 Computer & Communications Engineering Student
 
 Interested in:
 
-* Cybersecurity
-* Network Security
 * Machine Learning
 * Artificial Intelligence
-* SOC & Blue Team Technologies
 
 ---
 
