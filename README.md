@@ -318,10 +318,6 @@ LLM Analysis
 Security Report
 ```
 
-### Live Application
-
-**[Launch Intelligent NIDS](https://intelligent-nids-appnag3fzwwmyopt89ejfaj.streamlit.app/)**
-
 ---
 
 # Project Structure
